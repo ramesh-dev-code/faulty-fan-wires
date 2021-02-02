@@ -14,7 +14,7 @@
 **Note**: The wires did not pass through the white plastic socket      
 
 ## Dataset and Preprocessing   
-1. Dataset: 1541 images per class (FAIL_CONN, FAIL_PT, PASS). The images are captured at different distances from the device and also at different angles to induce more variations in the training dataset  
+1. Dataset: 1541 images per class (FAIL_CONN, FAIL_PT, PASS). The images are captured at different distances from the device and also at different angles to induce more variations in the training (80%) and validation (20%) datasets  
 2. Convert the color space of the image from BGR to RGB
 3. Resize the image to 400 x 400. The default image size of 224 x 224 is not sufficient to classify the FAIL_PT due to its smaller dimension.
 4. Subtract the per-channel mean of the imagenet dataset (RGB:[123.68, 116.779, 103.939]) from the resized image   
