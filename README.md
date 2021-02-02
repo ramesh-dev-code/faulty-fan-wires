@@ -33,7 +33,7 @@
 ## Training
 1. Refer to this [link](https://github.com/ramesh-dev-code/misaligned-heat-sink/blob/main/README.md#training-platform-setup) for the training platform setup   
 2. Unfreeze all the convolution layers in the VGG-16 model. This fine-tunes the pre-trained weights of the convolution layers by removing the unneccessary variations so as to fit for the target dataset. This step significantly improves the performance on the testing images compared to the fixed weights trained on the imagenet dataset.   
-3. The previous experiments on the target dataset suggest the fully-connected network with **two 256-node** hidden layers and a **3-node** output layer with the **softmax classifier**   
+3. The [previous experiments](https://hackmd.io/CqLn94oZR1WqxCK99paukw?view#Image-Classification-of-Faulty-Alignment-of-Fan-Wires) on the target dataset suggest the fully-connected network with **two 256-node** hidden layers and a **3-node** output layer with the **softmax classifier**   
 4. Training Epochs: 30, Execution Time: 34.6 m, Trained Model: best_model_02-02-2021_10:25:08.h5   
 
 ## Training and Validation Performance   
